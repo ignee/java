@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 // Route to return a plain text message
 app.get('/', (req, res) => {
-    res.send('Hello, this is your backend message!');
+    res.send('konichiwa ohayo gozaimazu');
 });
 
 // Route to return a JSON message
