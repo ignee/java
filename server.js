@@ -24,7 +24,8 @@ const pool = mysql.createPool({
 // API endpoint to fetch data
 app.get("/api/data", async (req, res) => {
   try {
-    const [rows] = await pool.query("SELECT * training_v1.users");
+    // Correct SQL query
+    const [rows] = await pool.query("SELECT * FROM training_v1.users");
     res.json(rows);
   } catch (error) {
     console.error("Error fetching data:", error);
